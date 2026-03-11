@@ -50,18 +50,3 @@ Inclui:
 - Algumas estações são consistentemente mais populares como ponto de partida.  
 - Estas estações estão próximas a hubs de transporte e áreas movimentadas.  
 
----
-
-## 📈 Visualizations
-
-### 1️⃣ Trip Duration Distribution (Histogram)
-Mostra a distribuição das durações, destacando a maioria das viagens curtas e a presença de outliers.
-
-```python
-plt.figure(figsize=(10, 6))
-sns.histplot(df['duration_sec'], kde=True, bins=300)
-plt.title('Distribution of Trip Durations')
-plt.xlabel('Duration (seconds)')
-plt.ylabel('Frequency')
-plt.xlim(0, 8000)
-plt.show()
